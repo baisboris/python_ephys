@@ -11,11 +11,16 @@ This repository contains Python scripts for analyzing whole-cell patch-clamp ele
 
 ## Structure
 
-- `01_Load_Files.py` — Data loading and preprocessing
-- `02_Spike_Analysis.py` — Spike detection and AP features
-- `03_Current_Injection.py` — Step protocol analysis
-- `04_Stimulus_Alignment.py` — Sensory stimulus alignment
-- `05_Voltage_Imaging.py` — ΔF/F and ROI-based imaging analysis
+- `00_Load_Files.py` — Load and parse raw electrophysiology and imaging data
+- `01_Load_Files_Interactive.py` — Interactive version of the loader
+- `02_Spontaneous_Firing.py` — Spike detection and spontaneous activity analysis
+- `03_Sensory_Stimuli.py` — Airpuff stimulus detection and response alignment
+- `04_Current_Injection.py` — Analysis of current step injection protocols
+- `05_Ri_T_Sag.py` — Input resistance, time constant, and sag ratio analysis
+- `06_current_injection_apfiring.py` — Firing rate, rheobase, and AP properties
+- `07_real_time_plot.py` — Real-time plotting of ongoing recordings
+- `run_all_sensory.py` — Batch process for sensory stimuli scripts
+- `run_all_steps.py` — Batch process for step injection scripts
 
 ## Requirements
 
